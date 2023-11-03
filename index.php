@@ -1,3 +1,3 @@
 <?php
-$name = "Nick";
-echo $name . "<br>";
+$dishes = array('milk', 'bread');
+print_r ($dishes);
