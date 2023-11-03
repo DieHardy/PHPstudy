@@ -9,5 +9,4 @@ Your name: <input type="text" name="my_name">
 <input type="submit" value="Send">
 </form>
 _HTML_;
-
 }
