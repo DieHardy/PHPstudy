@@ -1,4 +1,5 @@
 <?php
+// comment
 if ('POST' == $_SERVER['REQUEST_METHOD']){
     print "Hello, " . $_POST['my_name'];
 } else{
