@@ -1,3 +1,3 @@
 <?php
 $name = "Nick";
-echo $name;
+echo $name . "<br>";
