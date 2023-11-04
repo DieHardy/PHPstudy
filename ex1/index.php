@@ -1,13 +1,13 @@
 <?php
+require 'functions.php';
 // the form makes a request to itself
 if ('POST' == $_SERVER['REQUEST_METHOD']){
-    print "Hello, " . $_POST['my_name'];
+    if(validate_form()){
+    process_form();
+    }
+    else{
+        print_form();
+    }
 } else{
-    print<<<_HTML_
-<form method="post" action="$_SERVER[PHP_SELF]">
-    Your name: <input type="text" name="my_name">
-    <br>
-    <input type="submit" value="Send">
-</form>
-_HTML_;
+print_form();
 }
