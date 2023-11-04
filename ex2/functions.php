@@ -15,9 +15,9 @@ print <<<_HTML_
 <option value="Magenta">Magenta</option>
 <option value="Purple">Purple</option>
 </select><br>
-Width: <input type="text" name="width"></input><br>
-Height: <input type="text" name="height"></input><br>
-<input type="submit" value="Choose"></input>
+Width: <input type="text" name="width"><br>
+Height: <input type="text" name="height"><br>
+<input type="submit" value="Choose">
 </form>
 _HTML_;
 }
