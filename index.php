@@ -1,13 +1,11 @@
+
 <?php
-// comment
-if ('POST' == $_SERVER['REQUEST_METHOD']){
-    print "Hello, " . $_POST['my_name'];
-} else{
-    print<<<_HTML_
-<form method="post" action="$_SERVER[PHP_SELF]">
-Your name: <input type="text" name="my_name">
-<br>
-<input type="submit" value="Send">
-</form>
-_HTML_;
-}
+?>
+
+<ul>
+    <li><a href="./ex1">Exercise 1</a></li>
+    <li><a href="./ex1">Exercise 2</a></li>
+    <li><a href="./ex1">Exercise 3</a></li>
+    <li><a href="./ex1">Exercise 4</a></li>
+
+</ul>
