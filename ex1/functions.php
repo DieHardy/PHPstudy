@@ -39,6 +39,5 @@ function validate_form(){
  } else{
      $errors[] = "Please enter a valid age.";
  }
-
  return $errors;
 }
