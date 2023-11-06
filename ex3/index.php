@@ -1,37 +1,25 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Main page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-</head>
+<?php
+$title = "Login";
+include './modules/header.php'; ?>
 <body>
 
 <div class="container">
-    <h2 class="mt-4">Registration</h2>
-    <form action="./app/database/connect.php" method="POST">
-            <div class="form-group">
-                <label for="formGroupExampleInput">Email:</label>
-                <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">Login:</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Login">
-            </div>
+    <h2 class="mt-4">Login</h2>
+    <form action="login.php" method="POST">
+        <div class="form-group">
+            <label for="formGroupExampleInput">Login:</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="login" name="login">
+        </div>
         <div class="form-group">
             <label for="formGroupExampleInput2">Password:</label>
-            <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+            <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="password" name="password">
         </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput2">Repeat password:</label>
-            <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Repeat Password">
-        </div>
-        <button type="submit" class="btn btn-warning">Submit</button>
+        <button type="submit" class="btn btn-primary">Enter</button>
+        <p>You can <a href="./registration.php"> create</a> an account if you don't have one!</p>
     </form>
+
+
+
 </div>
 
 
